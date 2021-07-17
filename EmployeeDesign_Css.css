@@ -118,3 +118,14 @@ label{
     margin-left: 12px;
 
 }
+/*UC-5*/
+select{
+    padding: 12px;
+    border: firebrick;
+    border-radius: 4px;
+    resize: vertical;
+    font: normal normal normal 16px Roboto;
+    letter-spacing: 0px;
+    color:black;
+    background-color: transparent;
+}
