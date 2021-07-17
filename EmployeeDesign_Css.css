@@ -14,7 +14,7 @@ body {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    border: 0 solid green;
+    border: 0 solid dodgerblue;
 }
 
 .logo-content {
@@ -33,7 +33,7 @@ body {
     font: normal normal bold 20px/25px Montserrat;
     font-family: 'Anton', sans-serif;
     letter-spacing: 0px;
-    color: greenyellow;
+    color: crimson;
     text-transform: capitalize;
 }
 .emp-payroll {
@@ -46,16 +46,16 @@ body {
 /*UC-2*/
 .form-content{
     /*min-height: calc{100% - 80px}*/
-    background-color: olivedrab;
+    background-color:black;
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 0px solid green;
+    border: 0px solid darkred;
 }
 .form{
     width: 65;
     padding: 44px ;
-    background: olivedrab 0% 0% no-repeat padding-box;
+    background: crimson 0% 0% no-repeat padding-box;
     box-shadow: 0px 3px 6px grey;
     justify-content: center;
     border: 1px solid burlywood;
