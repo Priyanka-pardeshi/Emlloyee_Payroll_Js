@@ -6,7 +6,6 @@
     <title>Employee Payroll</title>
     <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
     <style>
-    
     </style>
     <link rel="stylesheet" href="EmployeeDesign_Css.css">
 
@@ -24,16 +23,43 @@
             </div>
         </div>
     </header>
-        <!-- UC-2 -->
-        <div class="form-content">
-            <form class="form" action="" onsubmit="save(); return false">
-                <div class="form-head">Employee Payroll</div>
-                    <label class="label text" for="name">NAME:</label>
-                    <input class="input" type="text" id="name" name="name" placeholder="Your Name..." required>
+    <!-- UC-2 -->
+    <div class="form-content">
+        <form class="form" action="" onsubmit="save(); return false">
+            <div class="form-head">Employee Payroll</div>
+            <label class="label text" for="name">NAME:</label>
+            <input class="input" type="text" id="name" name="name" placeholder="Your Name..." required>
+            <br>
+            <br>
+            <!--UC-3-->
+            <div class="row-content">
+                <label class="label text" for="profile">PROFILE IMAGES</label>
+                <div class="profile-radio-content">
+                    <label>
+                        <input type="radio" id="profile1" name="profile" value="..//assent.png" required>
+                        <img class="profile" id="image1"
+                            src="C:\Users\Priyanka\Desktop\JsWorkspace\Employee_payroll\Images\assets\joseph.jpg">
+                    </label>
+                    <label>
+                        <input type="radio" id="profile2" name="profile" value="..//assent.png" required>
+                        <img class="profile" id="image2"
+                            src="C:\Users\Priyanka\Desktop\JsWorkspace\Employee_payroll\Images\assets\nik.jpg">
+                    </label>
+                    <label>
+                        <input type="radio" id="profile3" name="profile" value="..//assent.png" required>
+                        <img class="profile" id="image3"
+                            src="C:\Users\Priyanka\Desktop\JsWorkspace\Employee_payroll\Images\assets\joseph.jpg">
+                    </label>
+                    <label>
+                        <input type="radio" id="profile4" name="profile" value="..//assent.png" required>
+                        <img class="profile" id="image4"
+                            src="C:\Users\Priyanka\Desktop\JsWorkspace\Employee_payroll\Images\assets\nik.jpg">
+                    </label>
                 </div>
-            </form>
-        </div>
-    
+
+            </div>
+        </form>
+    </div>
 </body>
 
 </html>
