@@ -56,7 +56,36 @@
                             src="C:\Users\Priyanka\Desktop\JsWorkspace\Employee_payroll\Images\assets\nik.jpg">
                     </label>
                 </div>
-
+            </div>
+            <!--UC-4-->
+            <div class="row-content">
+                <label class="label text" for="gender">Gender</label>
+                <div>
+                    <input type="radio" id="male" name="gender" value="male">
+                    <label class="text" for="male">MALE</label>
+                    <input type="radio" id="female" name="gender" value="female">
+                    <label class="text" for="female">FEMALE</label>
+                </div>
+            </div>
+            <div class="row-content">
+                <label class="label text" for="department">Department</label>
+                <div>
+                    <input class="checkbox" type="checkbox" id="hr" name="hr" value="HR">
+                    <label class="text" for="hr">HR</label>
+                    <input class="checkbox" type="checkbox" id="sale" name="sale" value="SALE">
+                    <label class="text" for="sale">SALE</label>
+                    <input class="checkbox" type="checkbox" id="finance" name="finance" value="FINANCE">
+                    <label class="text" for="finance">FINANCE</label>
+                    <input class="checkbox" type="checkbox" id="eng" name="eng" value="ENG">
+                    <label class="text" for="eng">ENGINEER</label>
+                    <input class="checkbox" type="checkbox" id="other" name="other" value="other">
+                    <label class="text" for="other">other</label>
+                </div>
+            </div>
+            <div class="row-content">
+                <label class="label text" for="slary">Choose ypur salary</label>
+                <input class="input" type="range" name="salary" id="salary" min="300000" max="500000" step="100" value="400000">
+                <output class="salary-output text" for="salary">400000</output>
             </div>
         </form>
     </div>
