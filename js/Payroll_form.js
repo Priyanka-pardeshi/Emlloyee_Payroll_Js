@@ -81,30 +81,33 @@ window.addEventListener('DOMContentLoaded', () => {
 const save=()=>{
     try{
         let empParyrollData=createEmployeePayroll();
+        createAndUpdateStorage(empParyrollData);
     }catch(e)
     {
         return;
     }
 }
 
+
+
 const createEmployeePayroll=()=>{
-    let empParyrollData=new empParyrollData();
+    let empPayrollData=new empPayrollData();
     try{
-        empParyrollData.name=getInputValueById('#name');
+        empPayrollData.name=getInputValueById('#name');
     }catch(e){
         setTextValue('.text-error',e);
         throw e;
     }
 
-    empParyrollData.profilePic=getSelectedValues('[name=profile]').pop();
-    empParyrollData.gender=getSelectedValues('[name=gender]').pop();
-    empParyrollData.department=getSelectedValues('[name=department]');
-    empParyrollData.salary=getInputValueById('#salary');
-    empParyrollData.note=getInputValueById('#notes');
+    empPayrollData.profilePic=getSelectedValues('[name=profile]').pop();
+    empPayrollData.gender=getSelectedValues('[name=gender]').pop();
+    empPayrollData.department=getSelectedValues('[name=department]');
+    empPayrollData.salary=getInputValueById('#salary');
+    empPayrollData.note=getInputValueById('#notes');
     let date=getInputValueById('#day')+" "+getInputValueById('#month')+" "+getInputValueById('#year');
-    empParyrollData.date=Date.parse(date);
-    alert(empParyrollData.toString());
-    return empParyrollData;
+    empPayrollData.date=Date.parse(date);
+    alert(empPayrollData.toString());
+    return empPayrollData;
 }
 const getSelectedValues=(propertyValue)=>{
     let allItems=document.querySelectorAll(propertyValue);
@@ -125,3 +128,15 @@ const getInputElementValue=(id)=>{
     return value;
 }
 //UC-4
+
+function createAndUpdateStorage(empParyrollData){
+    let empPayrollList=JSON.parse(localStorage.getItem("EmployeePayrollList"));
+    if(empPayrollList!=undefined){
+        empPayrollList.push(empParyrollData);
+    }else{
+        empPayrollList=[empParyrollData]
+    }
+    alert(empPayrollList.toString());
+    //stringify is used to convert js object to json.
+    localStorage.setItem("EmployeePayrollList",JSON.stringify(empPayrollList))
+}
