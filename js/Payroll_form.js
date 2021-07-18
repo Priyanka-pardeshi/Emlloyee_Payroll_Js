@@ -71,5 +71,11 @@ window.addEventListener('DOMContentLoaded',()=>{
             textError.textContent=e;
         }
     });
-});
 
+
+const salary=document.querySelector('#salary');
+const output=document.querySelector('.salary-output');
+output.addEventListener('input',function(){
+    output.textContent=salary.value;
+});
+});
